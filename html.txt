@@ -1,0 +1,33 @@
+hmtl
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>OLIMPOGYM</title>
+</head>
+<body>
+<header id="header">
+    <div class="flex"> 
+        <a href="#"><img src="Design_sem_nome__1_-removebg-preview.png" alt="icone" class="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">A OLIMPO</a></li>
+                <li><a href="#">UNIDADES</a></li>
+                <li><a href="#">MODALIDADES</a></li>
+                <li><a href="#">HORÁRIO AULAS</a></li>
+                <li><a href="#">PLANOS</a></li>
+            </ul>
+        </nav>
+        <div class="btn-whatsapp">
+            <a href="#">contato</a>
+        </div>
+    </div>
+</header>
+<section class="banner"></section>
+
+<script src="menu.js"></script>
+</body>
+</html>
