@@ -50,6 +50,7 @@
                     <li class="nav-item"><a href="#unidade">UNIDADE</a></li>
                     <li class="nav-item"><a href="#modalidades">MODALIDADES</a></li>
                     <li class="nav-item"><a href="#card">PLANOS</a></li>
+
                 </ul>
                 <div class="btn-whatsapp">
                     <a href="#">
@@ -72,9 +73,13 @@
         <script>const menuIcon = document.querySelector(".icon");
             const menuButton = document.querySelector(".icon-button");
             const mobileMenu = document.querySelector(".mobile-menu");
+            const menuOverlay = document.querySelector(".menu-overlay");
             menuButton.addEventListener("click", () => {
               menuIcon.classList.toggle("open"); 
               mobileMenu.classList.toggle("open");
+              menuOverlay.classList.toggle("show");
+
+              document.body.classList.toggle("no-scroll", mobileMenu.classList.contains("open"));
             });</script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
