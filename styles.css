@@ -649,6 +649,7 @@ h1 {
     justify-content: center;
     flex-direction: column;
     margin-bottom: 5vh;
+
 }
 
 .card .card_text1 {
@@ -667,6 +668,7 @@ h1 {
     justify-content: space-evenly;
     gap: 2vw;
     padding: 0 1vw;
+    
 }
 
 .card_info {
@@ -680,6 +682,7 @@ h1 {
     min-width: 250px;
     max-width: 400px;
     box-sizing: border-box;
+    
 }
 
 .card .card_text1 {
@@ -1047,32 +1050,34 @@ body.no-scroll {
     transition: opacity 0.3s ease;
 }
 .card_info_container {
-    display: flex; 
+    display: flex;
     flex-wrap: nowrap; 
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+    -webkit-overflow-scrolling: touch; 
     gap: 10px; 
-    padding-bottom: 10px;
-    /* border: 1px solid red; */
+    padding: 10px; 
+    width: 100%; 
+    max-width: 100%;
+    box-sizing: border-box; 
 }
 
 .card_info {
-    min-width: 10%;
-    max-width: 350px; 
-    flex-shrink: 0; 
-    scroll-snap-align: center; 
-    
-
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    box-sizing: border-box; 
 }
-
-.card_info_container::-webkit-scrollbar {
+body {
+    overflow-x: hidden;
+}
+/* .card_info_container::-webkit-scrollbar {
     height: 6px;
 }
 
 .card_info_container::-webkit-scrollbar-thumb {
     background-color: #a57ea8;
     border-radius: 10px;
-}
+} */
 
 
 }
