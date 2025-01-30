@@ -78,16 +78,24 @@
               menuIcon.classList.toggle("open"); 
               mobileMenu.classList.toggle("open");
               menuOverlay.classList.toggle("show");
-
               document.body.classList.toggle("no-scroll", mobileMenu.classList.contains("open"));
-            });</script>
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    const mobileMenuIcon = document.querySelector('.mobile-menu-icon button');
-    const mobileMenu = document.querySelector('.mobile-menu');
+            });
+            
+                document.querySelectorAll('.mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        menuIcon.classList.remove("open");
+        mobileMenu.classList.remove("open");
+        menuOverlay.classList.remove("show");
+        document.body.classList.remove("no-scroll");
+    });
+});
 
-    mobileMenuIcon.addEventListener('click', () => {
-        mobileMenu.classList.toggle('show');
+document.querySelectorAll('.mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        menuIcon.classList.remove("open");
+        mobileMenu.classList.remove("open");
+        menuOverlay.classList.remove("show");
+        document.body.classList.remove("no-scroll");
     });
 });
 
