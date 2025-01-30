@@ -944,7 +944,31 @@ h1 {
     width: 100%;
 }
 
+.horarios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.horarios tbody{
+    color: #fff;
+}
+.horarios .unidades_text1 {
+    font-size: 3vh;
+
+}
+.horarios .unidades_text2{
+    font-size: 5vh;
+    margin-bottom: 5vh;
+    color: #a57ea8;
+}
+
 @media (max-width: 768px) {
+
+    .horarios .unidades_text2{
+        font-size: 3.7vh;}
     .btn-whatsapp {
         margin-left: 15vw;
     }
@@ -1082,14 +1106,6 @@ body {
 
 }
 
-.horarios{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-}
 
 
 
